@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Welcome!</title> 
-        <link rel="stylesheet" href="mainpage.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
         <style>
@@ -23,12 +22,13 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                position: relative;
             }
 
             #header_logo{
-                height : 80px;
+                height : 100px;
                 width: 250px;
-                padding-left: 20px;
+                padding-left: 10px;
                 padding-top: 10px;
 
             }
@@ -54,13 +54,21 @@
             }
 
             .all_footer_elements{
-                width : 90px;
-                height : 85px;
+                width : 160px;
+                height : 140px;
                 text-align: justify;
+                margin-left: 40px;
+                margin-top: 80px;
+                line-height: 1.4;
+                
+            }
+            
+            h4{
+                position: relative;
+                left : -18px;
             }
 
             .quick_links{
-                list-style-type: none;
                 padding : 0px;
             }
 
@@ -78,8 +86,26 @@
             #footer_logo{
                 width: 290px;
                 position: relative;
-                top : -150px;
+                padding-left: 20px;
+                bottom: -55px;
 
+            }
+
+            .footer_details{
+                width : 400px;
+            }
+
+            .anchor_quick{
+                text-decoration: none;
+                color : white;
+                font-style: verdana;
+            }
+            i{
+                padding-right : 10px; 
+            }
+            .forflex{
+                display: flex;
+                gap : 120px;
             }
         </style>
     </head>
@@ -92,25 +118,55 @@
                 <a class = 'header_elements' href = 'courses.html'> Courses </a>
                 <a class = 'header_elements' href = 'Location.html'> Location </a>
                 <a class = 'header_elements' href = 'Contact_us.html'> Contact Us </a>
+                <a class = 'header_elements' href = "https://wa.me/919985858639"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
             
         </header>
+
+        <hr style = 'color : white solid px'>
+
+        <h1>Welcome To Nipuna Technologies !</h1>
+
+
 
         <hr style = 'color : white solid px'>
         
         <footer>
 
             <img id = 'footer_logo' src = 'logo.jpeg'>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.549007347153!2d80.6569931!3d16.4983585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fb63a1e739cf%3A0x3d0b693e2e24a758!2sNipuna%20Technologies!5e0!3m2!1sen!2sin!4v1739884048995!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <h4>Quick Links</h4>
-            <div class="all_footer_elements">
-                <ul class = 'quick_links'>
-                    <li><a class = 'footer_elements' href = 'mainpage.html'> Home </a></li>
-                    <li><a class = 'footer_elements' href = 'courses.html'> Courses </a></li>
-                    <li><a class = 'footer_elements' href = 'Location.html'> Location </a></li>
-                    <li><a class = 'footer_elements' href = 'Contact_us.html'> Contact Us </a></li>
-                </ul>
-            </div>
+            
+            <div class="forflex">
+
+                <div class="all_footer_elements">
+                    <h4>Quick Links</h4>
+                    <ul class = 'quick_links'>
+                        <li><a class = 'footer_elements' href = 'mainpage.html'> Home </a></li>
+                        <li><a class = 'footer_elements' href = 'courses.html'> Courses </a></li>
+                        <li><a class = 'footer_elements' href = 'Location.html'> Location </a></li>
+                        <li><a class = 'footer_elements' href = 'Contact_us.html'> Contact Us </a></li>
+                    </ul>
+                </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.549007347153!2d80.6569931!3d16.4983585!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35fb63a1e739cf%3A0x3d0b693e2e24a758!2sNipuna%20Technologies!5e0!3m2!1sen!2sin!4v1739884048995!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <div class="footer_details">
+                    <h2>Nipuna Technologies , Vijayawada</h2>
+                    <hr>
+                    <a class = 'anchor_quick' href="tel:+919985858639"><i class="fa-solid fa-phone"></i>Call: +91 99858 58639</a>
+                    <hr>
+                    <a class = 'anchor_quick' href="mailto:admin@nipunatechnologies.com"><i class="fa-solid fa-envelope"></i>Email: admin@nipunatechnologies.com</a>
+                    <hr>
+                    <a class = 'anchor_quick'><i class="fa-solid fa-location-dot"></i>Door No : 40-27-88/1, 3rd Floor, Lohia Towers, KP Nagar, Opposite Nirmala Convent, Vijayawada-520010</a>
+                    <hr>
+                    <a class = 'anchor_quick'><i class="fa-regular fa-clock"></i>Monday - Saturday: 7AM - 10PM</a>
+                    <hr>
+                </div>
+
+            
+
+        </div>
+
+            
         </footer>
 
     </body>
